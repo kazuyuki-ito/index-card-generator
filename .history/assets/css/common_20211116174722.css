@@ -1,0 +1,305 @@
+/* フォームパーツ */
+[type="text"],
+[type="date"],
+[type="number"],
+[type="email"],
+[type="password"] {
+  width: 100%;
+  border: 1px solid #c8cbcc;
+  padding: 10px 15px;
+  background: #ffffff;
+  border-radius: 6px;
+  height: 50px;
+}
+
+[type="text"].error,
+[type="date"].error,
+[type="number"].error,
+[type="email"].error,
+[type="password"].error {
+  border: 1px solid #c30012;
+}
+
+[type="text"]:disabled,
+[type="date"]:disabled,
+[type="number"]:disabled,
+[type="email"]:disabled,
+[type="password"]:disabled {
+  background: #f0f0f0;
+}
+
+[type="radio"],
+[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  outline: none;
+  opacity: 0;
+}
+
+label.check {
+  cursor: pointer;
+  position: relative;
+  padding: 0 0 0 25px;
+  line-height: 20px;
+}
+
+label.check:before {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+label.check [type="checkbox"]:checked+span:before {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid #7ab575;
+  border-radius: 3px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+label.check [type="checkbox"]:checked+span:after {
+  position: absolute;
+  top: -3px;
+  bottom: 0;
+  left: 6px;
+  display: block;
+  margin: auto;
+  width: 7px;
+  height: 11px;
+  border-right: 2px solid #7ab575;
+  border-bottom: 2px solid #7ab575;
+  transform: rotate(45deg);
+  content: '';
+}
+
+label.check [type="checkbox"]:disabled+span:before {
+  background: #eee;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+label.check-icon {
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  line-height: 20px;
+}
+
+label.check-icon [type="checkbox"]+i {
+  color: #ccc;
+}
+
+label.check-icon [type="checkbox"]:hover+i {
+  color: #a1a1a1;
+}
+
+label.check-icon [type="checkbox"]:checked+i {
+  color: #c30012;
+}
+
+label.radio {
+  cursor: pointer;
+  position: relative;
+  padding: 0 0 0 25px;
+  line-height: 20px;
+}
+
+label.radio:before {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+[type="radio"]:checked+span {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+
+[type="radio"]:checked+span:before {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid #7ab575;
+  background: #ffffff;
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+[type="radio"]:checked+span:after {
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  background: #7ab575;
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5px;
+  bottom: 0;
+}
+
+.pulldown_box .pulldown_bg {
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  position: relative;
+  box-sizing: border-box;
+  background: #ffffff;
+  display: block;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.pulldown_box .pulldown_bg:after {
+  margin: auto;
+  border-top: 2px solid #666;
+  border-right: 2px solid #666;
+  width: 9px;
+  height: 9px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 15px;
+  bottom: 0;
+  left: auto;
+  transform: rotate(135deg);
+}
+
+.pulldown_box .pulldown_bg select {
+  width: 116%;
+  padding: 12px 35px 12px 12px;
+  background: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+}
+
+.pulldown_box .pulldown_bg select:disabled {
+  background: #ccc;
+}
+
+textarea {
+  resize: none !important;
+  width: 100%;
+  border: 1px solid #c8cbcc;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 6px;
+  height: 170px;
+}
+
+.btn {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 16px;
+  border-radius: 6px;
+  margin: auto;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
+.btn.green {
+  background: #7ab575;
+}
+
+.btn.green-line {
+  color: #7ab575;
+  border: 1px solid #7ab575;
+}
+
+.btn.blue {
+  background: #59b1eb;
+}
+
+.btn.white {
+  background: #fff;
+  color: #333;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.btn:disabled {
+  background: #ccc;
+  color: #fff;
+  border: none;
+}
+
+.btn:disabled:hover {
+  opacity: 1;
+}
+
+/* アニメーション */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+/* アニメーション */
+.bounce-enter-active,
+.bounce-leave-active {
+  animation: bounce .5s;
+  position: absolute;
+}
+
+.bounce-enter,
+.bounce-leave-to {
+  animation: bounce .5s reverse;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
